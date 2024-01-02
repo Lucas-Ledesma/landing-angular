@@ -1,1 +1,52 @@
-<p>products works!</p>
+<h1>Products</h1>
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Products</th>
+      <th scope="col">Price</th>
+      <th scope="col">Details</th>
+    </tr>
+  </thead>
+  <tbody class="table-group-divider">
+    <tr>
+      <th scope="row">1</th>
+      <td>Lavandina</td>
+      <td>{{ 10 | currency }}</td>
+      <td>
+        <button
+          class="btn btn-outline-primary"
+          [routerLink]="['/products', 'lavandina']"
+        >
+          Details
+        </button>
+      </td>
+    </tr>
+    <tr>
+      <th scope="row">2</th>
+      <td>Limpia Vidrio</td>
+      <td>{{ 7 | currency }}</td>
+      <td>
+        <button
+          class="btn btn-outline-primary"
+          [routerLink]="['/products', 'detergente']"
+        >
+          Details
+        </button>
+      </td>
+    </tr>
+    <tr>
+      <th scope="row">3</th>
+      <td>Detergente</td>
+      <td>{{ 5 | currency }}</td>
+      <td>
+        <button
+          class="btn btn-outline-primary"
+          [routerLink]="['/products', 'limpia-vidrio']"
+        >
+          Details
+        </button>
+      </td>
+    </tr>
+  </tbody>
+</table>
